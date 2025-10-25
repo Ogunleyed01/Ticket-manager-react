@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import wave from '../assets/wave.svg'
+import circle from '../assets/circle.svg'
 
 export default function Landing(){
   return (
@@ -11,7 +13,7 @@ export default function Landing(){
         {/* Decorative wave background */}
         <div
           className="pointer-events-none absolute inset-x-0 -bottom-1 h-48 md:h-56 lg:h-72 bg-no-repeat bg-bottom"
-          style={{ backgroundImage: "url('/src/assets/wave.svg')", backgroundSize: 'cover' }}
+          style={{ backgroundImage: `url(${wave})`, backgroundSize: 'cover' }}
           aria-hidden="true"
         />
 
@@ -28,9 +30,9 @@ export default function Landing(){
           </div>
         </div>
 
-        <img src="/src/assets/circle.svg" alt="decor" className="absolute right-8 top-6 w-20 opacity-90"/>
-        {/* second decorative circle */}
-        <img src="/src/assets/circle.svg" alt="decorative circle" className="absolute  left-6 top-10 w-16 opacity-70"/>
+  <img src={circle} alt="decor" className="absolute right-8 top-6 w-20 opacity-90"/>
+  {/* second decorative circle */}
+  <img src={circle} alt="decorative circle" className="absolute left-6 top-10 w-16 opacity-70"/>
       </header>
 
       <main id="features" className="mt-6 grid grid-cols-1 md:grid-cols-3 gap-4">
