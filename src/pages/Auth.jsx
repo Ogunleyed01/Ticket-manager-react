@@ -43,7 +43,7 @@ export default function Auth(){
   }
 
   return (
-  <div className="min-h-screen flex items-center justify-center bg-sky-300 p-6">
+  <div className="min-h-screen flex items-center justify-center bg-sky-100 p-6">
       <div className="w-full max-w-md">
         <div className="bg-white/30 backdrop-blur-md border border-white/30 rounded-xl p-6 shadow-lg">
           <h2 className="text-2xl font-semibold text-gray-800">{mode === 'signup' ? 'Create your account' : 'Welcome back'}</h2>
