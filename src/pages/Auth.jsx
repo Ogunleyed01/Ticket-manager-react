@@ -49,7 +49,7 @@ export default function Auth(){
           <h2 className="text-2xl font-semibold text-gray-800">{mode === 'signup' ? 'Create your account' : 'Welcome back'}</h2>
           <p className="mt-2 text-sm text-gray-600">{mode === 'signup' ? 'Sign up to manage tickets for your team.' : 'Login to access your dashboard and tickets.'}</p>
 
-          <form onSubmit={handle} className="mt-6 space-y-4">
+          <form onSubmit={handle} className="mt-20 space-y-4">
             <div>
               <label className="block text-sm font-medium text-gray-700">Email</label>
               <input
